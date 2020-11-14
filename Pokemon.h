@@ -18,9 +18,9 @@ public:
     Pokemon();
     ~Pokemon();
 
-    void heightAdjustment(const float height);
-    void liposuction(const float weight);
-    void sprayPaint(const std::string color);
+    void heightAdjustment(const float h);
+    void liposuction(const float w);
+    void sprayPaint(const std::string c);
     void print() const;
 
 };
