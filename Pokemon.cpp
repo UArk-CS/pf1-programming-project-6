@@ -11,7 +11,7 @@ Pokemon::Pokemon() {
 
     cout << "Constructor" << endl;
     name = "N/A";
-    gender = "N/A";
+    gender = 'N';
     type = "N/A";
     color = "N/A";
     weight = 0.0;
@@ -25,19 +25,19 @@ Pokemon::~Pokemon() {
 
 }
 
-void Pokemon::heightAdjustment(const float h) {
+void Pokemon::heightAdjustment(float h) {
 
     height = h;
 
 }
 
-void Pokemon::liposuction(const float w) {
+void Pokemon::liposuction(float w) {
 
     weight = w;
 
 }
 
-void Pokemon::sprayPaint(const std::string c) {
+void Pokemon::sprayPaint(char c) {
 
     color = c;
 
@@ -45,6 +45,11 @@ void Pokemon::sprayPaint(const std::string c) {
 
 void Pokemon::print() const {
 
-    cout << "Print all attributes" << endl;
+    cout << "Name: " << name << endl;
+    cout << "Gender: " << gender << endl;
+    cout << "Type: " << type << endl;
+    cout << "Color: " << color << endl;
+    cout << "Weight: " << weight << endl;
+    cout << "Height: " << height << endl;
 
 }

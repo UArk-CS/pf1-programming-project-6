@@ -3,4 +3,4 @@ project(programming_project_6)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(programming_project_6 main.cpp)
+add_executable(programming_project_6 main.cpp Pokemon.h Pokemon.cpp)
