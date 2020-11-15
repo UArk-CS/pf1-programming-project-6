@@ -10,6 +10,12 @@ using namespace std;
 Pokemon::Pokemon() {
 
     cout << "Constructor" << endl;
+    name = "N/A";
+    gender = "N/A";
+    type = "N/A";
+    color = "N/A";
+    weight = 0.0;
+    height = 0.0;
 
 }
 
