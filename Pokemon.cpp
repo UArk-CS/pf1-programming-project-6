@@ -9,6 +9,7 @@ using namespace std;
 
 Pokemon::Pokemon() {
 
+    cout << endl;
     cout << "Constructor" << endl;
     name = "N/A";
     type = "N/A";
@@ -21,6 +22,7 @@ Pokemon::Pokemon() {
 
 Pokemon::~Pokemon() {
 
+    cout << endl;
     cout << "Destructor" << endl;
 
 }
@@ -39,29 +41,42 @@ void Pokemon::catchPokemon(std::string n, std::string t, std::string c, char g, 
 
 void Pokemon::heightAdjustment(float h) {
 
+    cout << endl;
+    cout << "Height Adjustment" << endl;
+    cout << "Old height: " << height << " in" << endl;
     height = h;
+    cout << "New height: " << height << " in" << endl;
 
 }
 
 void Pokemon::liposuction(float w) {
 
+    cout << endl;
+    cout << "Weight Adjustment" << endl;
+    cout << "Old weight: " << weight << " lbs" << endl;
     weight = w;
+    cout << "New weight: " << weight << " lbs" << endl;
 
 }
 
-void Pokemon::sprayPaint(char c) {
+void Pokemon::sprayPaint(std::string c) {
 
+    cout << endl;
+    cout << "Spray Paint" << endl;
+    cout << "Old color: " << color << endl;
     color = c;
+    cout << "New color: " << color << endl;
 
 }
 
 void Pokemon::print() const {
 
+    cout << endl;
     cout << "Name: " << name << endl;
     cout << "Gender: " << gender << endl;
     cout << "Type: " << type << endl;
     cout << "Color: " << color << endl;
-    cout << "Weight: " << weight << endl;
-    cout << "Height: " << height << endl;
+    cout << "Weight: " << weight << " in" << endl;
+    cout << "Height: " << height << " lbs" << endl;
 
 }

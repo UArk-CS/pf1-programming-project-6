@@ -18,10 +18,10 @@ public:
     Pokemon();
     ~Pokemon();
 
-    void catchPokemon(string n, string t, string c, char g, float w, float h);
+    void catchPokemon(std::string n, std::string t, std::string c, char g, float w, float h);
     void heightAdjustment(float h);
     void liposuction(float w);
-    void sprayPaint(char c);
+    void sprayPaint(std::string c);
     void print() const;
 
 };
