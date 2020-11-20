@@ -11,9 +11,9 @@ Pokemon::Pokemon() {
 
     cout << "Constructor" << endl;
     name = "N/A";
-    gender = 'N';
     type = "N/A";
     color = "N/A";
+    gender = 'N';
     weight = 0.0;
     height = 0.0;
 
@@ -22,6 +22,18 @@ Pokemon::Pokemon() {
 Pokemon::~Pokemon() {
 
     cout << "Destructor" << endl;
+
+}
+
+
+void Pokemon::catchPokemon(std::string n, std::string t, std::string c, char g, float w, float h) {
+
+    name = n;
+    type = t;
+    color = c;
+    gender = g;
+    weight = w;
+    height = h;
 
 }
 

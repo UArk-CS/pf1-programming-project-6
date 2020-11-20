@@ -8,9 +8,9 @@ class Pokemon {
 
 private:
     std::string name;
-    char gender;
     std::string type;
     std::string color;
+    char gender;
     float weight;
     float height;
 
@@ -18,6 +18,7 @@ public:
     Pokemon();
     ~Pokemon();
 
+    void catchPokemon(string n, string t, string c, char g, float w, float h);
     void heightAdjustment(float h);
     void liposuction(float w);
     void sprayPaint(char c);
